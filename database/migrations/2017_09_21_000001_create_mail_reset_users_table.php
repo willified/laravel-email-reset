@@ -13,8 +13,8 @@ class CreateMailResetUsersTable extends Migration
      */
     public function up()
     {
-        if( !Schema::hasTable('mail_reset_users') ) {
-            Schema::create('mail_reset_users', function (Blueprint $table) {
+        if( !Schema::hasTable('email_resets') ) {
+            Schema::create('email_resets', function (Blueprint $table) {
                 $table->unsignedInteger('id')->primary();
                 $table->string('email')->unique();
                 $table->string('token');
@@ -36,7 +36,7 @@ class CreateMailResetUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mail_reset_users');
+        Schema::dropIfExists('email_resets');
     }
 
 }
