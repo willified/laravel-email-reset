@@ -24,10 +24,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kaoken\LaravelMailReset\MailResetServiceProvider"
+                "Kaoken\\LaravelMailReset\\MailResetServiceProvider"
             ],
             "aliases": {
-                "MailReset": "Kaoken\LaravelMailReset\Facades\MailReset"
+                "MailReset": "Kaoken\\LaravelMailReset\\Facades\\MailReset"
             }
         }
     }
